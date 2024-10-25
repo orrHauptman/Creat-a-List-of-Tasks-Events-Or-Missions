@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Tasks </title>
+    <link rel="stylesheet" href="Tasks.css" type="text/css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="left"></div>
+        <div class="center">
+            <header id="title">Task Manager</header>
+            <form id="form">
+                <table border="1" id="table">
+                    <tr>
+                        <th> <label for="name"> Name of the task : </label>  </th>
+                        <td> <input type="text" name="name" id="name" required /> </td>
+                    </tr>
+                    <tr>
+                        <th><label for="description"> Description of the task : </label>  </th>
+                        <td> <input type="text" name="description" id="description" required /> </td>
+                    </tr>
+                    <tr>
+                        <th> <label for="task_type"> Type of the task : </label> </th>
+                        <td>
+                            <select name="task_type" id="task_type" required>
+                                <option disabled selected hidden></option>
+                                <option value="task" > task </option>
+                                <option value="mission"> mission </option>
+                                <option value="event"> event </option>
+                            </select>
+
+                        </td>
+                    </tr>
+
+                </table>
+                <button type="submit" id="submit" > Add </button> 
+
+
+            </form>
+
+            <header id="sub_title" style="text-decoration:underline"> The tasks: </header>
+            <table id="table_tasks" style="display:none">
+                <tr>
+                    <th> <label for="task_name"> Task name </label></th>
+                    <th> <label for="task_description"> Task description </label></th>
+                    <th> <label for="task_time"> Task taks place at / Finish task untill  </label></th>
+                    <th> <label for="Finished_task"> Delete task  </label></th>
+                </tr>
+
+            </table>
+        </div>
+        <div class="right"></div>
+    </div>
+    <script src="Tasks.js"></script>
+</body>
+</html>

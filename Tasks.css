@@ -1,0 +1,110 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh; 
+}
+
+.left, .right {
+    width: 140px; 
+    background-color: #ddd; 
+}
+
+.center {
+    flex-grow: 1; 
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+}
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th:not(.th_name){
+    background-color: #f2f2f2;
+}
+#title {
+    text-align: center;
+    font-size: 60px;
+    color: #0a0a0a;
+    text-shadow: 10px 4px 5px rgba(0, 0, 0, 0.5);
+}
+#sub_title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #0a0a0a;
+    text-shadow: 3px 3px 3px rgba(50, 50, 50, 0.5);
+}
+button:not(.button_delete) {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    font-weight: bold; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover
+{
+    border-color:darkseagreen;
+    border-width:7px;
+
+}
+button:active {
+    background-color: #3e8e41; 
+    transform: scale(0.98); 
+}
+input[type="text"] {
+    width: 300px; 
+}
+input[type="text"]:hover {
+    box-shadow: 0 0 8px #5a5a5a;
+}
+/*textarea {
+    border: none;
+    resize: none;
+    השארתי כדי להשתמש בזה אחר כך למצב עריכה של הטקס במשימות
+}*/
+.th_name {
+    background-color: #b3b3b3;
+}
+.button_delete {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #555;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.button_delete:hover {
+    background-color: #444;
+    border-color: #777;
+    transform: scale(1.05);
+}
+
+.button_delete:active {
+    background-color: #222;
+    border-color: #999;
+    transform: scale(0.98);
+}
+
+.button_delete:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.7);
+}
